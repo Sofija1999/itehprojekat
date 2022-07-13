@@ -44,13 +44,13 @@ export default function Home(){
           { !auth.isAuthenticated() && typeof window !== "undefined" && 
             (<Card className={classes.card}>
               <Typography variant="h6" className={classes.title}>
-                Home Page
+                Početna strana
               </Typography>
               <CardMedia className={classes.media} image={unicornbikeImg} title="Unicorn Bicycle"/>
               <Typography variant="body2" component="p" className={classes.credit} color="textSecondary"></Typography>
               <CardContent>
                 <Typography variant="body1" component="p">
-                  Welcome to the OneMoney Desktop version. <Link to='/signup'>Sign up</Link> or <Link to='/signin'>sign in</Link> to get started.
+                  Dobrodošli u OneMoney aplikaciju! <Link to='/signup'>Registrujte se</Link> ili <Link to='/signin'>Ulogujte se</Link> da biste je koristili.
                 </Typography>
               </CardContent>
             </Card>)

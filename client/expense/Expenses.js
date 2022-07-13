@@ -195,13 +195,13 @@ export default function Expenses() {
           <Divider/>
           <ExpansionPanelDetails style={{display: 'block'}}>
           <div>
-              <TextField label="Title" className={classes.textField} value={expense.title} onChange={handleChange('title', index)} margin="normal"/>
-             <TextField label="Amount ($)" className={classes.textField} value={expense.amount} onChange={handleChange('amount', index)} margin="normal" type="number"/>
+              <TextField label="Naslov" className={classes.textField} value={expense.title} onChange={handleChange('title', index)} margin="normal"/>
+             <TextField label="Iznos ($)" className={classes.textField} value={expense.amount} onChange={handleChange('amount', index)} margin="normal" type="number"/>
           </div>
           <div>
           <MuiPickersUtilsProvider utils={DateFnsUtils}>
                 <DateTimePicker
-                    label="Incurred on"
+                    label="Datum troška"
                     className={classes.textField}
                     views={["year", "month", "date"]}
                     value={expense.incurred_on}
@@ -209,10 +209,10 @@ export default function Expenses() {
                     showTodayButton
                 />
           </MuiPickersUtilsProvider>
-          <TextField label="Category" className={classes.textField} value={expense.category} onChange={handleChange('category', index)} margin="normal"/>
+          <TextField label="Kategorija" className={classes.textField} value={expense.category} onChange={handleChange('category', index)} margin="normal"/>
           </div>
           <TextField
-            label="Notes"
+            label="Dodatne informacije"
             multiline
             rows="2"
             value={expense.notes}
