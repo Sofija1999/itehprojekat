@@ -21,6 +21,8 @@ const theme = createMuiTheme({
       protectedTitle: '#2bbd7e',
       type: 'light'
     }
+
+    
   })
 
   export default theme
